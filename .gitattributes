@@ -1,1 +1,2 @@
- *.* linguist-language=C#
+/Python_S_Contract/*: Python
+/SudokuGame/*: C#
