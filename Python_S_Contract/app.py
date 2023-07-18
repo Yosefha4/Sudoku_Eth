@@ -33,17 +33,6 @@ manager_address = app.config["MANAGER_ADDRESS"]
 
 gas_price_wei = web3.to_wei(0.00000005, 'ether')
 
-# manager_private_key = manager_private_key[2:]
-
-# manager_account = keys.PrivateKey(bytes.fromhex(manager_private_key))
-
-
-# manager_account = Account.from_key(manager_private_key)
-
-# print(manager_account)
-# manager_address = manager_account.address
-
-
 
 # Contract address and ABI
 contract_address = app.config["CONTRACT_ADDRESS"]
@@ -151,52 +140,6 @@ def mint():
 
     return f"Minted {amount} SE tokens to {account}. Transaction URL: <a href='{etherscan_url}'>{etherscan_url}</a>" ,200
 
-
-
-# # Mint route
-# @app.route('/mint', methods=['POST'])
-# def mint():
-#     data = request.get_json()
-#     account = data['account']
-#     amount = int(data['amount'])  # Convert the amount to an integer
-    
-#     print((web3.eth))
-#     # Check if the caller is the manager account
-#     if web3.eth.default_account and web3.eth.default_account.lower() != manager_account.address.lower():
-#         return "Only the manager can call this function"
-    
-#     # Prepare the transaction
-#     contract_function = contract.functions.mint(account, amount)
-
-
-#     transaction = contract_function.build_transaction({
-#     'from': manager_address,
-#     'nonce': web3.eth.get_transaction_count(manager_address),
-#     'gas': 30000,  # Set the gas limit to 3,000,000
-#     'gasPrice': gas_price_wei  # Set the gas price in Wei
-# })
-#     # function_name = transaction.function_identifier()
-#     # print(function_name)
-
-
-#     # Sign the transaction
-#     print(transaction)
-
-#     signed_txn = web3.eth.account.sign_transaction(transaction, private_key=app.config["PRIVATE_KEY"])
-#     print(signed_txn)
-#     # Send the signed transaction
-#     tx_hash = web3.eth.send_raw_transaction(signed_txn.rawTransaction)
-    
-#    # Wait for the transaction to be mined
-#     web3.eth.wait_for_transaction_receipt(tx_hash)
-    
-#     # Get the network name
-#     network = web3.eth.chain_id
-    
-#     # Construct the etherscan URL
-#     etherscan_url = f"https://sepolia.etherscan.io/tx/{tx_hash.hex()}"
-    
-#     return f"Minted {amount} SE tokens to {account}. Transaction URL: <a href='{etherscan_url}'>{etherscan_url}</a>"
 
 
 @app.route('/transfer', methods=['POST'])
