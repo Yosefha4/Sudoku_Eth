@@ -1,0 +1,65 @@
+﻿<Window x:Class="SudokuGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudokuGame"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        WindowStartupLocation="CenterScreen"
+        Icon="../Assets/pastime.png"
+        Closing="Window_Closing"
+        xmlns:conv="clr-namespace:SmartContractGUI2.Converters"
+        mc:Ignorable="d"
+        MinHeight="650" MinWidth="850" FontFamily="Copperplate Gothic Light" Background="#3b444b" MaxWidth="900" MaxHeight="650" 
+        Title="Sudoku ETH" >
+    <!--#3b444b-->
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/abstract-textured-backgound.jpg" Stretch="UniformToFill" />
+        </Grid.Background>
+        <!--<TextBlock Margin="0,35,0,50" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Gold">
+                Sudoku ETH
+        </TextBlock>-->
+
+
+        <!--<Image x:Name="backgroundImage" Source="../Assets/image-background-main.jpg" Stretch="UniformToFill" />-->
+        <TextBlock Grid.Row="0" Margin="0,35,0,50" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Gold">
+        Sudoku ETH
+        </TextBlock>
+
+        <!-- Buttons -->
+        <StackPanel Name="spMainButtons" Grid.Row="1"  HorizontalAlignment="Center" >
+            <StackPanel.Resources>
+                <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignFlatButton}">
+                    <Setter Property="Width" Value="260" />
+                    <Setter Property="Height" Value="46" />
+                    <Setter Property="Margin" Value="0,0,0,30" />
+                    <Setter Property="FontSize" Value="23" />
+                    <Setter Property="Background" Value="#0077be"/>
+                    <Setter Property="Foreground" Value="Gold"/>
+                    <EventSetter Event="Click" Handler="Main_Menu_Options"/>
+                </Style>
+            </StackPanel.Resources>
+
+            <Button x:Name="buPlayGame" Content="Play Game"/>
+            <Button x:Name="buHall" Content=" Hall of Fame"/>
+            <Button x:Name="buSettings" Content="Settings"/>
+            <Button x:Name="buAbout" Content="About Us"/>
+            <Button x:Name="buExit" Content="Exit"/>
+        </StackPanel>
+
+        <Frame x:Name="contentFrame" NavigationUIVisibility="Hidden"  />
+        <materialDesign:DialogHost Grid.RowSpan="2"  x:Name="RootDialog">
+
+        </materialDesign:DialogHost>
+
+    </Grid>
+
+</Window>

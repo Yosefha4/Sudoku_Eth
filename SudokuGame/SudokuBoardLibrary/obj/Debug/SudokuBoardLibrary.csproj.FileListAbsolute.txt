@@ -1,0 +1,11 @@
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\obj\Debug\SudokuBoardLibrary.csproj.AssemblyReference.cache
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\obj\Debug\SudokuBoardLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\bin\Debug\SudokuBoardLibrary.dll
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\bin\Debug\SudokuBoardLibrary.pdb
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\bin\Debug\ValidationBoardLibrary.dll
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\bin\Debug\ValidationBoardLibrary.pdb
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\obj\Debug\SudokuBoardLibrary.csproj.CopyComplete
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\obj\Debug\SudokuBoardLibrary.dll
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\obj\Debug\SudokuBoardLibrary.pdb
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Elad\source\repos\SudokuGame\SudokuBoardLibrary\bin\Debug\Newtonsoft.Json.xml

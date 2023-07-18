@@ -1,0 +1,6 @@
+C:\Users\Elad\source\repos\SudokuGame\ValidationBoardLibrary\bin\Debug\ValidationBoardLibrary.dll
+C:\Users\Elad\source\repos\SudokuGame\ValidationBoardLibrary\bin\Debug\ValidationBoardLibrary.pdb
+C:\Users\Elad\source\repos\SudokuGame\ValidationBoardLibrary\obj\Debug\ValidationBoardLibrary.csproj.AssemblyReference.cache
+C:\Users\Elad\source\repos\SudokuGame\ValidationBoardLibrary\obj\Debug\ValidationBoardLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Elad\source\repos\SudokuGame\ValidationBoardLibrary\obj\Debug\ValidationBoardLibrary.dll
+C:\Users\Elad\source\repos\SudokuGame\ValidationBoardLibrary\obj\Debug\ValidationBoardLibrary.pdb

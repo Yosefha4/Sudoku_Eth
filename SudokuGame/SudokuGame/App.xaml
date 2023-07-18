@@ -1,0 +1,61 @@
+﻿<Application x:Class="SudokuGame.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SudokuGame"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Badged.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Snackbar.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBlock.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ComboBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ToggleButton.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Grey.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.LightBlue.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+
+            <SolidColorBrush x:Key="TextBoxBackgroundColor" Color="#71c7ec" />
+            <SolidColorBrush x:Key="CustomColor1" Color="#bfd7f5" />
+            <SolidColorBrush x:Key="CustomColor2" Color="#C0D8C0" />
+            <SolidColorBrush x:Key="CustomColor3" Color="#ffc" />
+            <SolidColorBrush x:Key="CustomColor4" Color="#F69C10" />
+
+
+            <local:ColorDictionary x:Key="colorDictionary">
+                <sys:String x:Key="#ff71c7ec">#b4d7f5</sys:String>
+                <sys:String x:Key="#ffbfd7f5">#b4e2f5</sys:String>
+                <sys:String x:Key="#ffc0d8c0">#dcede6</sys:String>
+                <sys:String x:Key="#ffffffcc">#fff2cc</sys:String>
+                <sys:String x:Key="#fff69c10">#fce2ba</sys:String>
+            </local:ColorDictionary>
+
+
+
+            <Style x:Key="CustomTextBoxStyle" TargetType="TextBox">
+                <Setter Property="Background" Value="White" />
+
+                <Setter Property="ContextMenu">
+                    <Setter.Value>
+                        <ContextMenu />
+                    </Setter.Value>
+                </Setter>
+
+                <Style.Triggers>
+                    <Trigger Property="IsFocused" Value="True">
+                        <Setter Property="Background" Value="{DynamicResource TextBoxBackgroundColor}" />
+                    </Trigger>
+
+                </Style.Triggers>
+
+            </Style>
+            <FontFamily x:Key="CustomFont">/Fonts/#TextMeOne</FontFamily>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
