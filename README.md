@@ -7,7 +7,7 @@ SudokuETH is a decentralized Sudoku game that utilizes the Ethereum blockchain f
 
 ---
 <div style="display: flex; flex-direction: row; align-items: center;">
-  <img src="assets/loginSudoku.png" width="500">
+<!--   <img src="assets/loginSudoku.png" width="500"> -->
   <img src="assets/sudokuImg.png" width="430">
 </div>
 
