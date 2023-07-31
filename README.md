@@ -5,7 +5,11 @@
 
 SudokuETH is a decentralized Sudoku game that utilizes the Ethereum blockchain for secure and transparent interactions. Players can enjoy solving Sudoku puzzles through an intuitive C# client interface, while game logic and communication are managed by a Python Flask server. The Solidity smart contract, deployed on Remix, handles player accounts, tracks winnings and losses, and ensures fair gameplay.
 
+
+
 ---
+[[Sudoku Game Video]](https://www.youtube.com/watch?v=5Rx2U8C637M)
+
 <div style="display: flex; flex-direction: row; align-items: center;">
 <!--   <img src="assets/loginSudoku.png" width="500"> -->
   <img src="assets/sudokuImg.png" width="430">
